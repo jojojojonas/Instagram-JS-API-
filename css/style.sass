@@ -1,0 +1,103 @@
+// Color
+$mainBlue: #24347C
+$white: #fff
+$black: #000
+
+// HTML
+html
+    body
+        color: $white
+        background-color: $mainBlue
+        a
+            color: $white
+            text-decoration: underline
+            &:hover
+                color: $white
+    
+// Input
+span.userNameAt
+    padding: 0 0 2px 0
+    border-bottom: 4px solid $white
+
+input#userName
+    width: 220px
+    color: $white
+    background: transparent
+    border: none 
+    border-bottom: 4px solid $white
+
+// Start Form
+#startForm
+    padding: 45vh 0 0 0
+
+.dontShowStartForm
+    display: none !important
+
+// Loading
+#loadingScreen
+    padding: 45vh 0 0 0
+
+.showLoadingScreen
+    display: block !important
+
+.dontShowLoading
+    display: none
+
+.fa-spinner
+    animation: rotateLoading 5s linear
+
+// Profile
+#profilExport
+    display: none
+
+.showProfilExport
+    display: block !important
+
+label#labelUserNamePreview
+    color: $mainBlue
+    background-color: $white
+    border-top-left-radius: 50px
+    border-bottom-left-radius: 50px
+    padding: 10px
+    span
+        color: $black
+        font-size: 20px
+        border-bottom: none
+    input
+        border: none
+
+#searchButton
+    width: 50px
+    height: 50px
+    background-color: $white
+    border: none
+    border-top-right-radius: 50px
+    border-bottom-right-radius: 50px 
+    i
+        &:before
+            color: $black
+
+// Keyframes
+@keyframes rotateLoading
+    0%
+        transform: rotate(0deg)
+    10%
+        transform: rotate(90deg)
+    20%
+        transform: rotate(180deg)
+    30%
+        transform: rotate(270deg)
+    40%
+        transform: rotate(360deg)
+    50%
+        transform: rotate(450deg)
+    60%
+        transform: rotate(540deg)
+    70%
+        transform: rotate(630deg)
+    80%
+        transform: rotate(730deg)
+    90%
+        transform: rotate(810deg)
+    100%
+        transform: rotate(900deg)
